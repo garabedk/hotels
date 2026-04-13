@@ -11,7 +11,7 @@
 <body > 
 
   <h2> <i>Ficha de Checkin </i> </h2> 
-  <p> Favor preencher o formulário abaixo</p>
+  <p> Favor preencher o formulário abaixo: </p>
 
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="GET" >
     <fieldset>
