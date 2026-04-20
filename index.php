@@ -31,20 +31,21 @@
 
   <script>
     let query = location.search;
-    if(query != "") document.getElementById("demo").innerHTML = "A consulta da URL é : " + query;
+    if(query != "") document.getElementById("demo").innerHTML = "JavaScript: A consulta da URL é: " + query;
   </script>
 
-  <?php  echo "My first PHP script! ";
-       echo $_SERVER['PHP_SELF'];
-       echo $_SERVER['REQUEST_METHOD'];
-	   echo $_SERVER['QUERY_STRING'];
-	   echo $_SERVER['PHP_SELF'];
+  <?php  
+         echo "Primeiro Script em ! ";
+         echo $_SERVER['PHP_SELF']."</p>";
+         echo $_SERVER['REQUEST_METHOD']."</p>";
+	       echo $_SERVER['QUERY_STRING']."</p>";
+	       echo $_SERVER['PHP_SELF']."</p>";
   ?>
 
   <?php  if($_SERVER['QUERY_STRING'] != "") {
-		  echo "<p> O Nome: ". $_GET['nome']."</p>";
-		  echo "<p> O Sobrenome: ". $_GET['sobrenome']."</p>";
-		  echo "<p> O Nome: ". $_GET['mensagem']."</p>";	
+		       echo "<p> O Nome: ". $_GET['nome']."</p>";
+		       echo "<p> O Sobrenome: ". $_GET['sobrenome']."</p>";
+		       echo "<p> O Nome: ". $_GET['mensagem']."</p>";	
 	      }
   ?>
 
