@@ -35,7 +35,7 @@
   </script>
 
   <?php  
-         echo "Primeiro Script em ! ";
+         echo "Primeiro Script em ! PHP";
          echo $_SERVER['PHP_SELF']."</p>";
          echo $_SERVER['REQUEST_METHOD']."</p>";
 	       echo $_SERVER['QUERY_STRING']."</p>";
